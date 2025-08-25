@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renn's Device Toolkit (R.D.T)</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <i class="ri-tools-fill"></i>
+        <span style="font-weight:600;">Renn's Device Toolkit</span>
+        <span style="background:#222;padding:2px 6px;border-radius:6px;font-size:12px;">R.D.T</span>
+      </div>
+      <div>
+        <a href="#download">My YouTube</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Renn's Device Toolkit<br>v1.0.3</h1>
+      <p> R.D.T is a toolkit for power users and developers. It lets you flash single or multiple partitions, flash recovery/vendor_boot, check & switch A/B slots, and manage devices over ADB & Fastboot. All in one place!.</p>
+      <div style="margin-top:20px;">
+        <a class="btn" href="#download"><i class="ri-download-2-line"></i> Download .exe</a>
+      </div>
+    </div>
+    <div>
+      <pre style="background:#0d0f15;color:#ccc;padding:16px;border-radius:10px;font-size:13px;overflow:auto;">
+$ fastboot devices
+a4cde98f	fastboot
+
+$ fastboot getvar current-slot
+current-slot: a
+Finished. Total time: 0.003s
+
+$ dmesg | grep slot
+[0.142000] android_boot: active slot is [a]
+      </pre>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature-card">
+      <h3><i class="ri-flashlight-line"></i> Fast & Lightweight</h3>
+      <p>ADB/Fastboot operations without hassle, responsive UI, minimal distractions.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i class="ri-shield-check-line"></i> Safe & Controlled</h3>
+      <p>Clear status, progress indicators, and protection to avoid wrong flashing.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i class="ri-settings-3-line"></i> Simple & Developer Modes</h3>
+      <p>Simple mode for casual users, developer mode for advanced modders.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i class="ri-cpu-line"></i> Multi Flash</h3>
+      <p>Flash multiple partitions in sequence with the order you set.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i class="ri-tools-line"></i> Recovery Tools</h3>
+      <p>Flash vendor_boot/recovery, reboot, and sideload ZIPs with clear indicators.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i class="ri-magic-line"></i> Easy to Use</h3>
+      <p>Clean and straightforward interface, designed to be simple and easy to use while tinkering.</p>
+    </div>
+  </section>
+
+  <footer>
+    <a>From Renn's YouTube, Project by Ahsani Halwan Rajib.<a>
+    <p>Platform-tools (ADB/FASTBOOT) by Google.<p>
+  </footer>
+</body>
+</html>
