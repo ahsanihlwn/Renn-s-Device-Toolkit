@@ -1,0 +1,148 @@
+body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #0a0b10;
+      color: #e5e5e5;
+    }
+    header {
+      background: rgba(10,11,16,0.8);
+      border-bottom: 1px solid #2c2c2c;
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+      padding: 12px;
+    }
+    header a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    header a:hover {
+      color: #fff;
+    }
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      color: #aaa;
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #4f46e5;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+    .btn:hover {
+      background: #4338ca;
+    }
+    .features {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+    }
+    .feature-card {
+      background: #111217;
+      border: 1px solid #2c2c2c;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .feature-card h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .feature-card p {
+      font-size: 14px;
+      color: #aaa;
+      line-height: 1.5;
+    }
+    footer {
+      border-top: 1px solid #2c2c2c;
+      padding: 20px;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* responsive styles */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr; /* jadi 1 kolom */
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header a {
+    margin-left: 0;
+    margin: 5px;
+  }
+
+  .features {
+    grid-template-columns: 1fr; /* semua card stack ke bawah */
+    padding: 40px 20px;
+  }
+
+  .feature-card {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
